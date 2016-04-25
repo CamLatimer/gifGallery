@@ -5,13 +5,13 @@
   angular
   .module('hypeRefApp' ,[
     'ui.router',
-    'ngResource',
-    'hypeControllers'
+    'hypeControllers',
+    'apiService'
   ])
   .config([
     '$stateProvider',
     '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider){
+    function($stateProvider, $urlRouterProvider, HypeRef){
       $stateProvider
       .state('hype-refs', {
         url: '/hype-refs',
