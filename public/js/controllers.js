@@ -3,19 +3,17 @@
 (function(){
   angular
   .module('hypeControllers', [])
-  .controller('HypeRefsCtrl', function($scope, HypeRef){
+  .controller('HypeRefsCtrl', function($scope, HypeRef, $stateParams, $state, $http){
     HypeRef.getRefs(function(response){
       var refs = response.data;
       $scope.refs = refs;
-      console.log($scope.refs);
     });
-  })
-  .controller('NewRefCtrl', function($scope, $state, $http){
-    $scope.ref = {};
     $scope.adder = function(){
-      $http.post('http://localhost:3001/api/refs', $scope.ref)
-      .then(function(){
-        $state.go('hype-refs');
+      var ref = $scope.ref;
+      $http.post('http://localhost:8080/api/refs', ref)
+      .then(function(response){
+        $scope.refs.push(ref);
+        console.log($scope.refs);
       });
     };
   })
@@ -29,7 +27,6 @@
           $scope.ref = ref;
         }
       });
-      console.log(refs);
     });
 
   })

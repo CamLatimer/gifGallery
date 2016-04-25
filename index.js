@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || 8080);
 
 app.use(express.static(__dirname + '/public'));
 app.use(parser.urlencoded({extended: true}));
-// app.use(parser.json({extended: true}));
+app.use(parser.json({extended: true}));
 
 
 // get all refs
