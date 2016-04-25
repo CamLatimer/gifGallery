@@ -17,13 +17,28 @@
       <th>$$$$$</th>
     </tr>
   <tbody>
-    <tr data-ng-repeat="ref in refs">
+    <tr>
+      <td>hypem</td>
+    </tr>
+    <tr data-ng-repeat="ref in hypemTracks">
       <td>{{$index + 1}}</td>
       <td>{{ref.title}}</td>
       <td><a href="">view</a></td>
-      <td>{{ref.details}}</td>
+      <!-- <td>{{ref.details}}</td>
       <td>{{ref.og_url}}</td>
-      <td>{{ref.Boosts}}</td>
+      <td>{{ref.Boosts}}</td> -->
+      <td>$$$$$</td>
+    </tr>
+    <tr>
+      <td>soundcloud</td>
+    </tr>
+    <tr data-ng-repeat="ref in sndTracks">
+      <td>{{$index + 1}}</td>
+      <td>{{ref.title}}</td>
+      <td><a href="">view</a></td>
+      <!-- <td>{{ref.details}}</td>
+      <td>{{ref.og_url}}</td>
+      <td>{{ref.Boosts}}</td> -->
       <td>$$$$$</td>
     </tr>
   </tbody>
