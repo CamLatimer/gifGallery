@@ -26,11 +26,6 @@
         url:'/hype-refs/new',
         templateUrl: 'views/new-hype-ref.html',
         controller: 'NewRefCtrl'
-      })
-      .state('editRef', {
-        url: '/hype-refs/:id/edit',
-        templateUrl: 'views/edit-hype-ref.html',
-        controller: 'EditCtrl'
       });
     }
   ]);
