@@ -1,0 +1,30 @@
+<form data-ng-submit="">
+  <label><a href="">add_Ref_: </a></label>
+  <input type="text" name="" label="" id="" placeholder="title" />
+  <input type="text" name="" label="" id="" placeholder="og_Url" />
+  <button type="submit">save</button>
+</form>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>No.</td>
+      <th>hypeRef</th>
+      <th>view</th>
+      <th>detail</th>
+      <th>og_Url</th>
+      <th>boost_lvl</th>
+      <th>$$$$$</th>
+    </tr>
+  <tbody>
+    <tr data-ng-repeat="ref in refs">
+      <td>{{$index + 1}}</td>
+      <td>{{ref.title}}</td>
+      <td><a href="">view</a></td>
+      <td>{{ref.details}}</td>
+      <td>{{ref.og_url}}</td>
+      <td>{{ref.Boosts}}</td>
+      <td>$$$$$</td>
+    </tr>
+  </tbody>
+</table>
