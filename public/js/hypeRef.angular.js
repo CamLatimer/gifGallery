@@ -6,6 +6,7 @@
   .module('hypeRefApp' ,[
     'ui.router',
     'ngResource',
+    'hypeControllers'
   ])
   .config([
     '$stateProvider',
