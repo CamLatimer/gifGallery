@@ -8,7 +8,7 @@ app = express();
 var HypeRef = Schema.HypeRef;
 var Comment = Schema.Comment;
 
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 8080);
 
 app.use(express.static(__dirname + '/public'));
 app.use(parser.urlencoded({extended: true}));

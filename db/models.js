@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 if(process.env.NODE_ENV == "production"){
   mongoose.connect(process.env.MONGODB_URI);
 }else{
-  mongoose.connect('mongodb://localhost/hypeRefsDb');
+  mongoose.connect('mongodb://localhost/hypeRefsDatabase');
 }
 
 var CommentSchema = new mongoose.Schema({

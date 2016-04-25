@@ -8,7 +8,7 @@
 <table class="table">
   <thead>
     <tr>
-      <td>No.</td>
+      <td>#</td>
       <th>hypeRef</th>
       <th>view</th>
       <th>detail</th>
@@ -17,29 +17,44 @@
       <th>$$$$$</th>
     </tr>
   <tbody>
-    <tr>
+    <tr data-ng-repeat="ref in refs">
+      <td>{{$index + 1}}</td>
+      <td>{{ref.title}}</td>
+      <td><a data-ui-sref="show({id: ref._id})">view</a></td>
+      <td>detail</td>
+      <td>{og_url</td>
+      <td>boost_lvl</td>
+      <td>$$$$$</td>
+    </tr>
+    <!-- <tr>
       <td>hypem</td>
     </tr>
     <tr data-ng-repeat="ref in hypemTracks">
       <td>{{$index + 1}}</td>
       <td>{{ref.title}}</td>
       <td><a href="">view</a></td>
-      <!-- <td>{{ref.details}}</td>
-      <td>{{ref.og_url}}</td>
-      <td>{{ref.Boosts}}</td> -->
+      <td>{{ref.loved_count}}</td>
+      <td>$$$$$</td>
+    </tr>
+    <tr>
+      <td>last.fm</td>
+    </tr>
+    <tr data-ng-repeat="ref in lastFmTracks">
+      <td>{{$index + 1}}</td>
+      <td>{{ref.name}}</td>
+      <td><a data-ui-sref="show{name: ref.name}">view</a></td>
+      <td>{{ref.playcount}}</td>
       <td>$$$$$</td>
     </tr>
     <tr>
       <td>soundcloud</td>
     </tr>
-    <tr data-ng-repeat="ref in sndTracks">
+    <tr data-ng-repeat="ref in sndTracks | orderBy: ref.playback_count">
       <td>{{$index + 1}}</td>
       <td>{{ref.title}}</td>
-      <td><a href="">view</a></td>
-      <!-- <td>{{ref.details}}</td>
-      <td>{{ref.og_url}}</td>
-      <td>{{ref.Boosts}}</td> -->
+      <td><a data-ui-sref="show{title: ref.title}">view</a></td>
+      <td>{{ref.playback_count}}</td>
       <td>$$$$$</td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>
