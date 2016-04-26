@@ -12,11 +12,15 @@
   .controller('RefCtrl', function($scope, $state, HypeRef, $http){
     $scope.reload = function(){
       $state.reload('ref');
-    }
-    HypeRef.getGiphs(function(response){
-      var giph = response.data;
-      return $scope.giph = giph.data;
-    });
+    };
+
+    $scope.loadGiph = function(){
+      HypeRef.getGiphs(function(response){
+        var giph = response.data;
+        return $scope.giph = giph.data;
+      });
+    };
+
     $scope.adder = function(){
       var ref = $scope.ref;
       ref.img_url = $scope.giph.image_original_url
@@ -25,6 +29,7 @@
         $state.go('catalogue');
       });
     };
+    $scope.loadGiph();
   })
   .controller('ShowCtrl', function($scope, $http, $stateParams, HypeRef){
     var refId = $stateParams.id;
@@ -34,6 +39,7 @@
       refs.forEach(function(ref){
         if(refId === ref._id){
           $scope.ref = ref;
+          console.log($scope.ref)
         }
       });
     });
