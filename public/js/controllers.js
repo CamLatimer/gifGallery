@@ -3,17 +3,26 @@
 (function(){
   angular
   .module('hypeControllers', [])
-  .controller('HypeRefsCtrl', function($scope, HypeRef, $stateParams, $state, $http){
+  .controller('CatalogueCtrl', function($scope, HypeRef, $http){
     HypeRef.getRefs(function(response){
-      var refs = response.data;
-      $scope.refs = refs;
+      var catalogue = response.data;
+      $scope.catalogue = catalogue;
+    });
+  })
+  .controller('ArtCtrl', function($scope, $state, HypeRef, $http){
+    $scope.reload = function(){
+      $state.reload('art');
+    }
+    HypeRef.getGiphs(function(response){
+      var giph = response.data;
+      $scope.giph = giph.data;
+      console.log($scope.giph);
     });
     $scope.adder = function(){
       var ref = $scope.ref;
       $http.post('http://localhost:8080/api/refs', ref)
       .then(function(response){
         $scope.refs.push(ref);
-        console.log($scope.refs);
       });
     };
   })
