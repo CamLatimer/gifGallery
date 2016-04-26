@@ -13,13 +13,18 @@
     '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider, HypeRef){
       $stateProvider
-      .state('hype-refs', {
-        url: '/hype-refs',
-        templateUrl: 'views/hype-refs.html',
-        controller: 'HypeRefsCtrl'
+      .state('catalogue', {
+        url: '/catalogue',
+        templateUrl: 'views/catalogue-view.html',
+        controller: 'CatalogueCtrl'
+      })
+      .state('art', {
+        url:'/',
+        templateUrl: 'views/art-view.html',
+        controller: 'ArtCtrl'
       })
       .state('show', {
-        url: '/hype-refs/:id',
+        url: '/catalogue/:id',
         templateUrl: 'views/show.html',
         controller: 'ShowCtrl'
       })
@@ -28,6 +33,7 @@
         templateUrl: 'views/new-hype-ref.html',
         controller: 'NewRefCtrl'
       });
+      $urlRouterProvider.otherwise('/')
     }
   ]);
 })();
