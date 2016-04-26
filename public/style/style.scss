@@ -1,9 +1,13 @@
-body{
-}
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
 
-.table{
-  width: 80%;
-  margin: 0 auto;
+body{
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+a{
+  color: black;
+  text-decoration: underline;
+  font-family: 'Carrois Gothic SC', sans-serif;
 }
 .ref-thumb{
   width: 100px;
@@ -11,6 +15,10 @@ body{
 }
 .feature-container{
   width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex:none;
   margin: 0;
   text-align: center;
 }
@@ -19,4 +27,12 @@ body{
 }
 #hide-field{
   display: none;
+}
+textarea{
+  width: 400px;
+  height: 300px;
+  border: none;
+}
+textarea:focus{
+  outline: none;
 }
