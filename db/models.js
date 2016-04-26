@@ -14,9 +14,6 @@ var CommentSchema = new mongoose.Schema({
 var HypeRefSchema = new mongoose.Schema({
   title: String,
   og_url: String,
-  details: String,
-  boosts: Number,
-  maxed: Boolean,
   img_url: String,
   comments: [CommentSchema]
 });
