@@ -21,6 +21,14 @@
       });
     };
 
+      var nextBtn = document.querySelector('#next-btn');
+      var txt = document.querySelector('#txtAr');
+      setTimeout(function() {
+        txt.focus()
+      }, 0);
+
+
+
     $scope.adder = function(){
       var ref = $scope.ref;
       ref.img_url = $scope.giph.image_original_url
@@ -29,6 +37,7 @@
         $state.go('catalogue');
       });
     };
+
     $scope.loadGiph();
   })
   .controller('ShowCtrl', function($scope, $http, $stateParams, HypeRef){
