@@ -18,10 +18,10 @@
         templateUrl: 'views/catalogue-view.html',
         controller: 'CatalogueCtrl'
       })
-      .state('art', {
-        url:'/',
-        templateUrl: 'views/art-view.html',
-        controller: 'ArtCtrl'
+      .state('ref', {
+        url:'/ref',
+        templateUrl: 'views/ref-view.html',
+        controller: 'RefCtrl'
       })
       .state('show', {
         url: '/catalogue/:id',

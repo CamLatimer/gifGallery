@@ -6,4 +6,15 @@
   width: 80px;
   height: 80px; }
 
+.feature-container {
+  width: 100%;
+  margin: 0;
+  text-align: center; }
+
+.feature-img {
+  margin: 0 auto; }
+
+#hide-field {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

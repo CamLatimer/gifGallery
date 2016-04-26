@@ -14,8 +14,10 @@ var CommentSchema = new mongoose.Schema({
 var HypeRefSchema = new mongoose.Schema({
   title: String,
   og_url: String,
+  giphy_id: String,
   img_url: String,
-  comments: [CommentSchema]
+  // comments: [CommentSchema]
+  critique: String,
 });
 
 module.exports = {

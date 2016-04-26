@@ -9,14 +9,11 @@
       .then(callback);
     };
     this.getGiphs = function(callback){
-      return $http.get('http://api.giphy.com/v1/gifs/random?q=cat&limit=201&api_key=dc6zaTOxFJmzC')
+      return $http.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=funny+cat')
       .then(callback);
     };
   });
-
 })();
 
 // giphy public beta key dc6zaTOxFJmzC
-
-
 // gangsta kitten id:"l4KhYXYuv0HH0AExy"

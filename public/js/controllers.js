@@ -9,20 +9,20 @@
       $scope.catalogue = catalogue;
     });
   })
-  .controller('ArtCtrl', function($scope, $state, HypeRef, $http){
+  .controller('RefCtrl', function($scope, $state, HypeRef, $http){
     $scope.reload = function(){
-      $state.reload('art');
+      $state.reload('ref');
     }
     HypeRef.getGiphs(function(response){
       var giph = response.data;
-      $scope.giph = giph.data;
-      console.log($scope.giph);
+      return $scope.giph = giph.data;
     });
     $scope.adder = function(){
       var ref = $scope.ref;
+      ref.img_url = $scope.giph.image_original_url
       $http.post('http://localhost:8080/api/refs', ref)
       .then(function(response){
-        $scope.refs.push(ref);
+        $state.go('catalogue');
       });
     };
   })

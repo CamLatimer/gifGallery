@@ -3,8 +3,11 @@ var seedData = require('./seeds');
 var HypeRef = Schema.HypeRef;
 var Comment = Schema.Comment;
 
+HypeRef.remove()
+
 HypeRef.remove().then(function(){
-  HypeRef.create(seedData).then(function(){
-    process.exit();
-  });
+  // HypeRef.create(seedData).then(function(){
+  //   process.exit();
+  // });
+  process.exit();
 });
