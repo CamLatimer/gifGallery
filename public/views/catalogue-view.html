@@ -1,9 +1,8 @@
 <h1 data-ng-controller="RefCtrl"><a data-ui-sref="ref" data-ng-click="reload()">hypeRefs</a></h1>
-<table class="table">
-  <thead>
-  <tbody>
-    <tr data-ng-repeat="ref in catalogue">
-      <td><a data-ui-sref="show({id: ref._id})"><img class="ref-thumb" data-ng-src="{{ref.img_url}}"></a></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="container text-center">
+    <div class="container" data-ng-repeat="ref in catalogue">
+      <div class="row">
+        <a data-ui-sref="show({id: ref._id})"><img class="ref-thumb" data-ng-src="{{ref.img_url}}"></a>
+      </div>
+    </div>
+  </div>
