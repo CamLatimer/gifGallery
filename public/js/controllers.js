@@ -24,30 +24,14 @@
       var nextBtn = document.querySelector('#next-btn');
       var txt = document.querySelector('#txtAr');
       var arrow = document.querySelector('.fa-arrow-right');
-      var colorStatus = 0;
-      // $scope.clrStyle = {"color": "white"};
-      setInterval(function() {
-        txt.focus()
-      }, 10);
-
-      setInterval(function() {
-        var color;
-        if($scope.clrStyle.color == "white"){
-          color = "black";
-          $scope.clrStyle = {"color": color};
-          colorStatus = 1;
-        }else{
-          color = "white"
-          $scope.clrStyle = {"color": color};
-          colorStatus = 0;
-        }
-      }, 1000);
-
-
+      // setInterval(function() {
+      //   txt.focus()
+      // }, 10);
 
     $scope.adder = function(){
       var ref = $scope.ref;
-      ref.img_url = $scope.giph.image_original_url
+      ref.img_url = $scope.giph.image_original_url;
+      ref.critiques = [{body: ref.critique}];
       $http.post('http://localhost:8080/api/refs', ref)
       .then(function(response){
         $state.go('catalogue');
