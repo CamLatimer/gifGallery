@@ -17,20 +17,23 @@ app.use(parser.json({extended: true}));
 
 // get all refs
 app.get('/api/refs', function(req, res){
-  HypeRef.find({}).then(function(refs){
+  HypeRef.find({})
+  .then(function(refs){
     res.json(refs);
   })
 });
 // get a single ref
 app.get('/api/refs/:_id', function(req, res){
-  HypeRef.findOne({_id: req.params._id}).then(function(ref){
+  HypeRef.findOne({_id: req.params._id})
+  .then(function(ref){
     res.json(ref);
   });
 });
 // create a ref
 app.post('/api/refs', function(req, res){
   console.log(req.body);
-  HypeRef.create(req.body).then(function(err, ref){
+  HypeRef.create(req.body)
+  .then(function(err, ref){
     if (err) {
       console.log(err);
     }
@@ -38,10 +41,22 @@ app.post('/api/refs', function(req, res){
   });
 });
 
+app.put('api/refs/:_id', function(req, res){
+  HypeRef.findOneAndUpdate({_id: req.params._id}, req.body.ref, {new: true})
+  .then(function(ref){
+    if(err){
+      console.log(err)
+    }
+    res.json(ref);
+    console.log('ref updated');
+  });
+});
+
 // delete a ref
 app.delete('/api/refs/:_id', function(req, res){
-  console.log(req.body);
-  HypeRef.findOneAndRemove({_id: req.params._id}).then(function(){
+  console.log(req.params._id);
+  HypeRef.findOneAndRemove({_id: req.params._id})
+  .then(function(){
     res.json({success: true});
     console.log('ref deleted...')
   });

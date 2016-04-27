@@ -1,4 +1,4 @@
-<h4 data-ng-controller="RefCtrl"><a data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h4>
+<h4><a data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h4>
 
 <div class="feature-container">
 
@@ -11,3 +11,7 @@
   </div>
 
 </div>
+
+<form data-ng-submit="deleteRef(ref._id)">
+  <button type="submit">delete</button>
+</form>

@@ -4,6 +4,7 @@
   angular
   .module('hypeControllers', [])
   .controller('CatalogueCtrl', function($scope, HypeRef, $http){
+
     HypeRef.getRefs(function(response){
       var catalogue = response.data;
       $scope.catalogue = catalogue;
@@ -21,12 +22,12 @@
       });
     };
 
-      var nextBtn = document.querySelector('#next-btn');
-      var txt = document.querySelector('#txtAr');
-      var arrow = document.querySelector('.fa-arrow-right');
-      setInterval(function() {
-        txt.focus()
-      }, 10);
+    var nextBtn = document.querySelector('#next-btn');
+    var txt = document.querySelector('#txtAr');
+    var arrow = document.querySelector('.fa-arrow-right');
+    setInterval(function() {
+      txt.focus()
+    }, 10);
 
     $scope.adder = function(){
       var ref = $scope.ref;
@@ -39,24 +40,30 @@
     };
 
     $scope.loadGiph();
+
   })
   .controller('ShowCtrl', function($scope, $http, $stateParams, HypeRef){
+
     var refId = $stateParams.id;
     console.log(refId);
     HypeRef.getRefs(function(response){
       var refs = response.data;
-      refs.forEach(function(ref){
+      $scope.refs = refs;
+      $scope.refs.forEach(function(ref){
         if(refId === ref._id){
           $scope.ref = ref;
           console.log($scope.ref)
-        }
+        };
       });
     });
 
+    $scope.deleteRef = function(id){
+      console.log('delete button clicked');
+      $http.delete('http:/api/refs/' + id).then(function(){
+        $state.go('catalogue');
+      });
+    };
   })
-  .controller('EditCtrl', function($scope, $state, $stateParams){
-
-  });
 })();
 
 // sndcld client id 4f2b9615c8783056a2eae41eba103c48
