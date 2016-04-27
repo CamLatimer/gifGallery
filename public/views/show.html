@@ -1,10 +1,13 @@
-<h4 data-ng-controller="RefCtrl"><a data-ui-sref="catalogue">catalogue</a></h4>
+<h4 data-ng-controller="RefCtrl"><a data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h4>
 
-
-
-
-<div class="container feature-container">
+<div class="feature-container">
 
   <img class="feature-img" data-ng-src="{{ref.img_url}}">
-  <p>{{ref.critique}}</p>
+
+  <div class="container critique-container">
+    <p data-ng-repeat="critique in ref.critiques" class="critique">
+      {{critique.body}}
+    </p>
+  </div>
+
 </div>
