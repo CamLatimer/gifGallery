@@ -43,7 +43,6 @@
 
   })
   .controller('ShowCtrl', function($scope, $http, $stateParams, HypeRef){
-
     var refId = $stateParams.id;
     console.log(refId);
     HypeRef.getRefs(function(response){
@@ -56,13 +55,6 @@
         };
       });
     });
-
-    $scope.deleteRef = function(id){
-      console.log('delete button clicked');
-      $http.delete('http:/api/refs/' + id).then(function(){
-        $state.go('catalogue');
-      });
-    };
   })
 })();
 
