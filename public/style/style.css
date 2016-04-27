@@ -25,13 +25,21 @@ a {
   margin: 0 auto;
   cursor: pointer; }
 
+.fa-arrow-right {
+  color: rgba(0, 210, 33, 0.4);
+  font-size: 1.8em; }
+
+.show-img {
+  cursor: auto; }
+
 #hide-field {
   display: none; }
 
 textarea {
-  width: 180px;
-  height: 50px;
-  border: none; }
+  width: 300px;
+  height: 300px;
+  border: none;
+  font-size: 2em; }
 
 textarea:focus {
   outline: none; }
@@ -39,6 +47,7 @@ textarea:focus {
 .critique {
   display: flex;
   margin-top: 20px;
-  align-self: flex-start; }
+  align-self: flex-start;
+  font-size: 3em; }
 
 /*# sourceMappingURL=style.css.map */

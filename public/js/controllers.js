@@ -24,9 +24,9 @@
       var nextBtn = document.querySelector('#next-btn');
       var txt = document.querySelector('#txtAr');
       var arrow = document.querySelector('.fa-arrow-right');
-      // setInterval(function() {
-      //   txt.focus()
-      // }, 10);
+      setInterval(function() {
+        txt.focus()
+      }, 10);
 
     $scope.adder = function(){
       var ref = $scope.ref;
