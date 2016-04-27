@@ -38,6 +38,15 @@ app.post('/api/refs', function(req, res){
   });
 });
 
+// delete a ref
+app.delete('/api/refs/:_id', function(req, res){
+  console.log(req.body);
+  HypeRef.findOneAndRemove({_id: req.params._id}).then(function(){
+    res.json({success: true});
+    console.log('ref deleted...')
+  });
+});
+
 
 app.listen(app.get('port'), function(){
   console.log('server up');
