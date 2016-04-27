@@ -23,9 +23,25 @@
 
       var nextBtn = document.querySelector('#next-btn');
       var txt = document.querySelector('#txtAr');
-      setTimeout(function() {
+      var arrow = document.querySelector('.fa-arrow-right');
+      var colorStatus = 0;
+      // $scope.clrStyle = {"color": "white"};
+      setInterval(function() {
         txt.focus()
-      }, 0);
+      }, 10);
+
+      setInterval(function() {
+        var color;
+        if($scope.clrStyle.color == "white"){
+          color = "black";
+          $scope.clrStyle = {"color": color};
+          colorStatus = 1;
+        }else{
+          color = "white"
+          $scope.clrStyle = {"color": color};
+          colorStatus = 0;
+        }
+      }, 1000);
 
 
 

@@ -33,7 +33,7 @@
         templateUrl: 'views/new-hype-ref.html',
         controller: 'NewRefCtrl'
       });
-      $urlRouterProvider.otherwise('/')
+      $urlRouterProvider.otherwise('/ref')
     }
   ]);
 })();

@@ -1,13 +1,17 @@
-<h4 data-ng-controller="RefCtrl"><a data-ui-sref="catalogue">catalogue</a></h4>
+<h4 data-ng-controller="RefCtrl"><a data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h4>
 
 <div class="feature-container">
 
-  <a href='' data-ng-click="reload()"><img id="feature-img" data-ng-src="{{giph.image_original_url}}"></a>
+  <img data-ng-click="reload()" id="feature-img" data-ng-src="{{giph.image_original_url}}">
 
 </div>
 
 <div class="container text-center">
-  <h1><a href='' data-ng-click="reload()" id="next-btn" >>>>></a></h1>
+  <h1>
+    <a href='' data-ng-click="reload()" id="next-btn" >
+      <i class="fa fa-arrow-right" data-ng-style="clrStyle"></i></span>
+    </a>
+  </h1>
   <form data-ng-submit="adder()">
     <h3><label><a href="http://www.merriam-webster.com/dictionary/metaphorize" target="_blank">metaphorize_: </a></label></h3>
     <textarea id="txtAr" type="text" name="" label="" id="" data-ng-model="ref.critique" autofocus placeholder="     add metaphor"></textarea><br>
