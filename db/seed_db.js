@@ -1,7 +1,7 @@
 var Schema = require('./models');
 var seedData = require('./seeds');
 var HypeRef = Schema.HypeRef;
-var Comment = Schema.Comment;
+var Critique = Schema.Critique;
 
 
 HypeRef.remove().then(function(){

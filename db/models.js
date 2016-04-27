@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+var Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
 // connects app to database, tells heroku to use mongolab add-on
 if(process.env.NODE_ENV == "production"){
   mongoose.connect(process.env.MONGODB_URI);
@@ -7,8 +8,7 @@ if(process.env.NODE_ENV == "production"){
   mongoose.connect('mongodb://localhost/hypeRefsDatabase');
 }
 
-var CommentSchema = new mongoose.Schema({
-  author: String,
+var CritiqueSchema = new mongoose.Schema({
   body: String
 });
 var HypeRefSchema = new mongoose.Schema({
@@ -16,11 +16,10 @@ var HypeRefSchema = new mongoose.Schema({
   og_url: String,
   giphy_id: String,
   img_url: String,
-  // comments: [CommentSchema]
-  critique: String
+  critiques: [CritiqueSchema]
 });
 
 module.exports = {
   HypeRef: mongoose.model('HypeRef', HypeRefSchema),
-  Comment: mongoose.model('Comment', CommentSchema)
+  Critique: mongoose.model('Comment', CritiqueSchema)
 }
