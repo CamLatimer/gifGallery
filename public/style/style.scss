@@ -22,7 +22,7 @@ a{
   margin: 0;
   text-align: center;
 }
-#feature-img{
+.feature-img{
   margin: 0 auto;
   cursor: pointer;
 }
@@ -37,6 +37,8 @@ textarea{
 textarea:focus{
   outline: none;
 }
-.fa-arrow-right{
-
+.critique{
+  display: flex;
+  margin-top: 20px;
+  align-self: flex-start;
 }
