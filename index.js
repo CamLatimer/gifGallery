@@ -6,7 +6,7 @@ var parser = require('body-parser');
 app = express();
 
 var HypeRef = Schema.HypeRef;
-var Comment = Schema.Comment;
+var Critique = Schema.Critique;
 
 app.set('port', process.env.PORT || 8080);
 
