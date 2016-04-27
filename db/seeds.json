@@ -1,26 +1,26 @@
 [
   {
     "img_url":"http://media4.giphy.com/media/xt17YCv65wQVi/giphy.gif",
-    "critique": [{"body": "...looking for the meaning of life..."}]
+    "critiques": [{"body": "...looking for the meaning of life..."}]
   },
   {
     "img_url": "http://media0.giphy.com/media/l4KhYXYuv0HH0AExy/giphy.gif",
-    "critique": [{"body":"at the library"}]
+    "critiques": [{"body":"at the library"}]
   },
   {
     "img_url":"http://media2.giphy.com/media/mRfInPlisFzqM/giphy.gif",
-    "critique":[{"body": "cat got your tongue"}]
+    "critiques":[{"body": "cat got your tongue"}]
   },
   {
   "img_url": "http://media0.giphy.com/media/5KN6UqeDnyF1u/giphy.gif",
-  "critique": [{"body":"Cam working on wdi project 4"}]
+  "critiques": [{"body":"Cam working on wdi project 4"}]
   },
   {
     "img_url": "http://media0.giphy.com/media/ZEEmbRoepm9SE/giphy.gif",
-    "critique": [{"body":"black cats. haha"}]
+    "critiques": [{"body":"black cats. haha"}]
   },
   {
     "img_url": "http://media3.giphy.com/media/CncyqZGQyEUbm/giphy.gif",
-    "critique": [{"body":"classic meme"}]
+    "critiques": [{"body":"classic meme"}]
   }
 ]
