@@ -43,7 +43,6 @@
       .then(function(response){
         $state.go('catalogue');
       });
-      $state.go('catalogue');
     };
 
     $scope.loadGiph();
