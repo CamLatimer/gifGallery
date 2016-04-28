@@ -5,11 +5,11 @@
   .module('apiService', [])
   .service('HypeRef', function($http){
     this.getRefs = function(callback){
-      return $http.get('//localhost:8080/api/refs')
+      return $http.get('https://localhost:8080/api/refs')
       .then(callback);
     };
     this.getGiphs = function(callback){
-      return $http.get('//api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC')
+      return $http.get('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC')
       .then(callback);
     };
   });

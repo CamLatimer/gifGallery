@@ -11,6 +11,7 @@ var Critique = Schema.Critique;
 app.set('port', process.env.PORT || 8080);
 
 app.use(express.static(__dirname + '/public'));
+app.use(cors());
 app.use(parser.urlencoded({extended: true}));
 app.use(parser.json({extended: true}));
 
