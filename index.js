@@ -2,7 +2,7 @@ var express = require('express');
 var Schema = require('./db/models');
 var mongoose = require('mongoose');
 var parser = require('body-parser');
-var cores = require('cors');
+var cors = require('cors');
 
 app = express();
 
