@@ -36,6 +36,8 @@
 
     $scope.adder = function(){
       var ref = $scope.ref;
+      ref.img_url = $scope.giph.image_original_url;
+      ref.og_still_url = $scope.giph.fixed_height_small_still_url;
       ref.critiques = [{body: ref.critique}];
       $http.post('/api/refs', ref)
       .then(function(response){
