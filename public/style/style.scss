@@ -93,3 +93,21 @@ textarea:focus{
 textarea:focus, input:focus{
   outline: none;
 }
+.full-back{
+  top:0;
+  left:0;
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: -100;
+  font-size: 12em;
+  padding: 0;
+  font-style: italic;
+  line-height: 1em;
+  opacity: .4;
+}
+.cat-back{
+  font-size: 30em;
+  white-space: pre;
+}
