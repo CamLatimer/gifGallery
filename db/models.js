@@ -20,6 +20,7 @@ var HypeRefSchema = new mongoose.Schema({
   og_url: String,
   giphy_id: String,
   img_url: String,
+  og_still_url: String,
   critiques: [CritiqueSchema]
 });
 

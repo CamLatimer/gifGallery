@@ -37,6 +37,7 @@
     $scope.adder = function(){
       var ref = $scope.ref;
       ref.img_url = $scope.giph.image_original_url;
+      ref.og_still_url = $scope.giph.fixed_height_small_still_url;
       ref.critiques = [{body: ref.critique}];
       $http.post('http://localhost:8080/api/refs', ref)
       .then(function(response){
@@ -46,10 +47,10 @@
 
     $scope.loadGiph();
 
-    $http.get('https://api.imgur.com/3/gallery/t/items/cat', {headers: {'Authorization': 'Client-ID feecb4475463d6d'}})
-    .then(function(response){
-      console.log('imgur-data: ' + response.data);
-    })
+    // $http.get('https://api.imgur.com/3/gallery/t/items/cat', {headers: {'Authorization': 'Client-ID feecb4475463d6d'}})
+    // .then(function(response){
+    //   console.log('imgur-data: ' + response.data);
+    // })
 
     // $http.get('http://api.lordofthememe.com/v1/posts/random.json')
     // .then(function(response){
