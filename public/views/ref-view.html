@@ -1,19 +1,16 @@
 <h4 data-ng-controller="RefCtrl"><a data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h4>
 
 <div class="feature-container">
-
   <img data-ng-click="reload()" class="feature-img" data-ng-src="{{giph.image_original_url}}">
-
-</div>
-
-<div class="container text-center">
-  <h1>
-    <a href='' data-ng-click="reload()" id="next-btn" >
-      <i class="fa fa-arrow-right"></i></span>
-    </a>
-  </h1>
-  <form data-ng-submit="adder()">
-    <textarea id="txtAr" type="text" name="" label="" id="" data-ng-model="ref.critique" autofocus placeholder="      critique this meme"></textarea><br>
+  <div class="container text-center">
+    <h1>
+      <a href='' data-ng-click="reload()" id="next-btn">
+        >
+      </a>
+    </h1>
+  </div>
+  <form class="critique-form" data-ng-submit="adder()">
+    <textarea class="txtAr inputs" type="text" name="" label="" id="" data-ng-model="ref.critique" autofocus placeholder="      critique"></textarea><br>
     <button type="submit">save</button>
   </form>
 </div>

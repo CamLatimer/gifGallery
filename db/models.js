@@ -12,6 +12,10 @@ var CritiqueSchema = new mongoose.Schema({
   body: String
 });
 var HypeRefSchema = new mongoose.Schema({
+  created: {
+    type: Date,
+    default: Date.now
+  },
   title: String,
   og_url: String,
   giphy_id: String,

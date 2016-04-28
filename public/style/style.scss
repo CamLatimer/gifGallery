@@ -1,24 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
-
+@mixin flexin(){
+  display: flex;
+  flex-direction: column;
+  flex:none;
+}
 body{
   font-family: 'Pathway Gothic One', sans-serif;
+  background: rgba(220,216,210, .3);
 }
 a{
   color: black;
   text-decoration: underline;
   font-family: 'Carrois Gothic SC', sans-serif;
 }
+a:hover{
+  color: rgba(0, 210, 33, .4);
+}
 .ref-thumb{
   width: 100px;
   height: 100px;
 }
+.ref-thumb:hover{
+  opacity: .3;
+  z-index: 100;
+}
 .feature-container{
   width: 100%;
   height: 200px;
-  display: flex;
-  flex-direction: column;
-  flex:none;
+  @include flexin;
   margin: 0;
   text-align: center;
 }
@@ -26,28 +36,60 @@ a{
   margin: 0 auto;
   cursor: pointer;
 }
-.fa-arrow-right{
-  color: rgba(0, 210, 33, .4);
-  font-size: 1.8em;
-}
 .show-img{
   cursor: auto;
 }
 #hide-field{
   display: none;
 }
-textarea{
+
+textarea:focus{
+  outline: none;
+}
+.critique{
+  @include flexin();
+  margin-top: 20px;
+  align-self: flex-start;
+  font-size: 3em;
+  white-space: pre;
+}
+#next-btn{
+  // position: absolute;
+  // top: 100px;
+  // right: 140px;
+  z-index: 80;
+  font-size: 8em;
+  color: rgba(0, 210, 33, .4);
+  font-size: 4em;
+}
+.meme-holder{
+  margin-bottom: 22px;
+}
+#giphy-logo{
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 20px;
+}
+.critique-form{
+  position: relative;
+  left: 20px;
+  bottom: 0;
+}
+.search-box{
+  margin: 0 0 40px 20px;
+  border: none;
+  height: 50px;
+  width: 300px;
+  border: none;
+  font-size: 3em;
+}
+.txtAr{
   width: 300px;
   height: 180px;
   border: none;
   font-size: 2em;
 }
-textarea:focus{
+textarea:focus, input:focus{
   outline: none;
-}
-.critique{
-  display: flex;
-  margin-top: 20px;
-  align-self: flex-start;
-  font-size: 3em;
 }

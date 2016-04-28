@@ -9,6 +9,12 @@
       var catalogue = response.data;
       $scope.catalogue = catalogue;
     });
+
+    var srch = document.querySelector('.inputs');
+    setInterval(function() {
+      srch.focus()
+    }, 10);
+
   })
   .controller('RefCtrl', function($scope, $state, HypeRef, $http){
     $scope.reload = function(){
@@ -23,9 +29,7 @@
       });
     };
 
-    var nextBtn = document.querySelector('#next-btn');
-    var txt = document.querySelector('#txtAr');
-    var arrow = document.querySelector('.fa-arrow-right');
+    var txt = document.querySelector('.inputs');
     setInterval(function() {
       txt.focus()
     }, 10);
