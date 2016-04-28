@@ -18,6 +18,7 @@
     $scope.loadGiph = function(){
       HypeRef.getGiphs(function(response){
         var giph = response.data;
+        console.log(giph);
         return $scope.giph = giph.data;
       });
     };
@@ -41,6 +42,15 @@
 
     $scope.loadGiph();
 
+    $http.get('https://api.imgur.com/3/gallery/t/items/cat', {headers: {'Authorization': 'Client-ID feecb4475463d6d'}})
+    .then(function(response){
+      console.log('imgur-data: ' + response.data);
+    })
+
+    // $http.get('http://api.lordofthememe.com/v1/posts/random.json')
+    // .then(function(response){
+    //   console.log(response.data);
+    // })
   })
   .controller('ShowCtrl', function($scope, $http, $stateParams, HypeRef){
     var refId = $stateParams.id;
