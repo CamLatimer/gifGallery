@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
 $highlight: rgba(0, 210, 33, .4);
+$altClr: rgba(0, 255, 255, .3);
 
 @mixin flexin(){
   display: flex;
@@ -12,7 +13,7 @@ body{
   background: rgba(220,216,210, .3);
 }
 a{
-  color: black;
+  color: $highlight;
   text-decoration: underline;
   font-family: 'Carrois Gothic SC', sans-serif;
 }
@@ -33,7 +34,6 @@ a:hover{
 }
 .feature-container{
   width: 100%;
-  height: 200px;
   @include flexin;
   margin: 0;
   text-align: center;
@@ -60,13 +60,26 @@ textarea:focus{
   letter-spacing: .1em;
 }
 #next-btn{
-  // position: absolute;
-  // top: 100px;
-  // right: 140px;
+  position: absolute;
+  top: 20px;
+  right: 100px;
   z-index: 80;
   font-size: 8em;
-  color: rgba(0, 210, 33, .4);
-  font-size: 4em;
+  text-decoration: none;
+}
+#save-btn{
+  background: $altClr;
+  color: white;
+  border: none;
+  height: 100px;
+  width: 150px;
+  font-size: 5em;
+  letter-spacing: .1em;
+}
+#next-btn:hover{
+  background: $altClr;
+  z-index: 200;
+  color: white;
 }
 .meme-holder{
   margin-bottom: 22px;

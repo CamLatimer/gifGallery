@@ -4,7 +4,7 @@
     <div class="row cat-row">
       <div class="meme-holder col-xs-2 cole-md-2" data-ng-repeat="ref in catalogue | filter:search | orderBy: 'created'">
         <a data-ui-sref="show({id: ref._id})"><img class="ref-thumb" data-ng-src="{{ref.og_still_url != null ? ref.og_still_url : ref.img_url}}"></a>
-        <div class="after"></div>
+        <div class="after meme-holder"></div>
       </div>
     </div>
   </div>

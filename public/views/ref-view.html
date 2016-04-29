@@ -1,8 +1,8 @@
 <h4><a id="upper" data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h4>
 
-<div class="feature-container">
+<div class="feature-container text-center">
   <img data-ng-click="reload()" class="feature-img" data-ng-src="{{giph.image_original_url}}">
-  <div class="container text-center">
+  <div class="container">
     <h1>
       <a href='' data-ng-click="reload()" id="next-btn">
         >
@@ -11,7 +11,7 @@
   </div>
   <form class="critique-form" data-ng-submit="adder()">
     <textarea class="txtAr inputs" type="text" name="" label="" id="" data-ng-model="ref.critique" autofocus placeholder="      critique"></textarea><br>
-    <button type="submit">save</button>
+    <button id="save-btn" type="submit">save</button>
   </form>
 </div>
 
