@@ -1,0 +1,13 @@
+<h1><a data-ui-sref="ref"><span class="glyphicon glyphicon-asterisk"></span></a></h1>
+<input type="search" label="search" class="inputs search-box" data-ng-model="search" placeholder="  find">
+  <div class="container">
+
+    <div class="" data-ng-repeat="ref in catalogue | filter:search | orderBy: 'created'">
+
+      <a data-ui-sref="show({id: ref._id})"><img data-ng-click="checker()" class="ref-thumb" data-ng-src="{{ref.og_still_url != null ? ref.og_still_url : ref.img_url}}"></a>
+
+    </div>
+
+  </div>
+
+<div class="cat-back full-back container">{{search}}</div>
