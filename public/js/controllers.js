@@ -10,10 +10,9 @@
       $scope.catalogue = catalogue;
     });
 
-    var srch = document.querySelector('.inputs');
-    setInterval(function() {
-      srch.focus()
-    }, 10);
+    $scope.stopper = function($event){
+      $event.preventDefault();
+    }
 
   })
   .controller('RefCtrl', function($scope, $state, HypeRef, $http){
