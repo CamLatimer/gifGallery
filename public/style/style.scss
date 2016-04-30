@@ -14,7 +14,6 @@ body{
 }
 a{
   color: $highlight;
-  text-decoration: underline;
   font-family: 'Carrois Gothic SC', sans-serif;
 }
 a:hover{
@@ -126,14 +125,15 @@ textarea:focus, input:focus{
   line-height: 1em;
   opacity: .4;
 }
-.cat-back{
+.catalogue-back{
   font-size: 30em;
 }
-.cat-container{
+.catalogue-container{
   width: 70%;
+  height: 100%;
 }
 @media screen and (max-width: 500px){
-  .cat-container{
+  .catalogue-container{
     width: 100%;
   }
 }
