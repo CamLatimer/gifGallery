@@ -5,6 +5,7 @@ Eventually, I want to pull from multiple API's to get content for users to add
 commentary to.   
 
 * View a deployed verison here: https://blooming-mesa-51637.herokuapp.com/#/ref
+
 ![Alt text](/screenshot3.png)
 
 # User Stories
@@ -30,6 +31,3 @@ page with an index of all the content and commentaries.
 AngularJS on the client side is making calls to a third party API to pull in content
 to be commented.  And it's making GET and POST requests to pull in and save data from
 the database and API I built with Mongoose/MongoDB and Express/Node.  
-
-
-![Alt text](/screenshot1.png)
