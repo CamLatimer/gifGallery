@@ -5,7 +5,7 @@ Eventually, I want to pull from multiple API's to get content for users to add
 commentary to.   
 
 * View a deployed verison here: https://blooming-mesa-51637.herokuapp.com/#/ref
-
+![Alt text](/screenshot3.png)
 
 # User Stories
 * This is aimed at people who roam around on the web and have an appreciation for
@@ -13,8 +13,12 @@ commentary to.
 
 * Users are presented with interesting stuff and prompted to critique what they see.
 
+![Alt text](/screenshot1.png)
+
 * Users get to checkout an index of all the saved content and commentary saved to the
 site.  
+
+![Alt text](/screenshot2.png)
 
 # How It Works
 Upon first visit to the site, a user hits a page presenting him with content pulled
