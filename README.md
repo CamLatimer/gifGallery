@@ -1,4 +1,4 @@
-# hypeRefs
+# giphGallery
 This is a prototype for a gallery of web art and commentary from site users.  I used the
 MEAN stack -- MongoDB, Express.js, Angular.js, and Node.js.  I also used SASS and Bootstrap for the styling.  As of now, The content comes from the Giphy API.  
 Eventually, I want to pull from multiple API's to get content for users to add
