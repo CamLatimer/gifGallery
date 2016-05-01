@@ -6,11 +6,11 @@ commentary to.
 
 * View a deployed verison here: https://blooming-mesa-51637.herokuapp.com/#/ref
 
+![Alt text](/screenshot1.png)
+
 # User Stories
 * This is aimed at people who roam around on the web and have an appreciation for
   weird things people make.
-
-![Alt text](/screenshot1.png)
 
 * Users are presented with interesting stuff and prompted to critique what they see.
 
