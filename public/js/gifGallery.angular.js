@@ -3,37 +3,32 @@
 (function(){
 
   angular
-  .module('hypeRefApp' ,[
+  .module('gifGalleryApp' ,[
     'ui.router',
-    'hypeControllers',
+    'gifControllers',
     'apiService'
   ])
   .config([
     '$stateProvider',
     '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider, HypeRef){
+    function($stateProvider, $urlRouterProvider, Gif){
       $stateProvider
       .state('catalogue', {
         url: '/catalogue',
         templateUrl: 'views/catalogue-view.html',
         controller: 'CatalogueCtrl'
       })
-      .state('ref', {
-        url:'/ref',
-        templateUrl: 'views/ref-view.html',
-        controller: 'RefCtrl'
+      .state('gif', {
+        url:'/gif',
+        templateUrl: 'views/gif-view.html',
+        controller: 'GifCtrl'
       })
       .state('show', {
         url: '/catalogue/:id',
         templateUrl: 'views/show.html',
         controller: 'ShowCtrl'
-      })
-      .state('newRef', {
-        url:'/hype-refs/new',
-        templateUrl: 'views/new-hype-ref.html',
-        controller: 'NewRefCtrl'
       });
-      $urlRouterProvider.otherwise('/ref')
+      $urlRouterProvider.otherwise('/gif')
     }
   ]);
 })();

@@ -2,10 +2,10 @@
 
 (function(){
   angular
-  .module('hypeControllers', [])
-  .controller('CatalogueCtrl', function($scope, HypeRef, $http){
+  .module('gifControllers', [])
+  .controller('CatalogueCtrl', function($scope, Gif, $http){
 
-    HypeRef.getRefs(function(response){
+    Gif.getGifs(function(response){
       var catalogue = response.data;
       $scope.catalogue = catalogue;
     });
@@ -15,16 +15,16 @@
     }
 
   })
-  .controller('RefCtrl', function($scope, $state, HypeRef, $http){
+  .controller('GifCtrl', function($scope, $state, Gif, $http){
     $scope.reload = function(){
-      $state.reload('ref');
+      $state.reload('gif');
     };
 
-    $scope.loadGiph = function(){
-      HypeRef.getGiphs(function(response){
-        var giph = response.data;
-        console.log(giph);
-        return $scope.giph = giph.data;
+    $scope.loadGif = function(){
+      Gif.getGiphys(function(response){
+        var giphy = response.data;
+        console.log(giphy);
+        return $scope.giphy = giphy.data;
       });
     };
 
@@ -35,22 +35,22 @@
 
     $scope.adder = function(){
       var ref = $scope.ref;
-      ref.img_url = $scope.giph.image_original_url;
-      ref.og_still_url = $scope.giph.fixed_height_small_still_url;
+      ref.img_url = $scope.giphy.image_original_url;
+      ref.og_still_url = $scope.giphy.fixed_height_small_still_url;
       ref.critiques = [{body: ref.critique}];
-      $http.post('/api/refs', ref)
+      $http.post('/api/gifs', ref)
       .then(function(response){
         $state.go('catalogue');
       });
     };
 
-    $scope.loadGiph();
+    $scope.loadGif();
 
   })
-  .controller('ShowCtrl', function($scope, $http, $stateParams, HypeRef){
+  .controller('ShowCtrl', function($scope, $http, $stateParams, Gif){
     var refId = $stateParams.id;
     console.log(refId);
-    HypeRef.getRefs(function(response){
+    Gif.getGifs(function(response){
       var refs = response.data;
       $scope.refs = refs;
       $scope.refs.forEach(function(ref){

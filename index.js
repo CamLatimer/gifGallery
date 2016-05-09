@@ -6,7 +6,7 @@ var cors = require('cors');
 
 app = express();
 
-var HypeRef = Schema.HypeRef;
+var Gif = Schema.Gif;
 var Critique = Schema.Critique;
 
 app.set('port', process.env.PORT || 8080);
@@ -17,24 +17,24 @@ app.use(parser.urlencoded({extended: true}));
 app.use(parser.json({extended: true}));
 
 
-// get all refs
-app.get('/api/refs', function(req, res){
-  HypeRef.find({})
+// get all gifs
+app.get('/api/gifs', function(req, res){
+  Gif.find({})
   .then(function(refs){
     res.json(refs);
   })
 });
-// get a single ref
-app.get('/api/refs/:_id', function(req, res){
-  HypeRef.findOne({_id: req.params._id})
-  .then(function(ref){
-    res.json(ref);
+// get a single gif
+app.get('/api/gifs/:_id', function(req, res){
+  Gif.findOne({_id: req.params._id})
+  .then(function(gif){
+    res.json(gif);
   });
 });
-// create a ref
-app.post('/api/refs', function(req, res){
+// create a gif
+app.post('/api/gifs', function(req, res){
   console.log(req.body);
-  HypeRef.create(req.body)
+  Gif.create(req.body)
   .then(function(err, ref){
     if (err) {
       console.log(err);
