@@ -1,11 +1,11 @@
 var Schema = require('./models');
 var seedData = require('./seeds');
-var HypeRef = Schema.HypeRef;
+var Gif = Schema.Gif;
 var Critique = Schema.Critique;
 
 
-HypeRef.remove().then(function(){
-  HypeRef.create(seedData).then(function(){
+Gif.remove().then(function(){
+  Gif.create(seedData).then(function(){
     process.exit();
   });
 });

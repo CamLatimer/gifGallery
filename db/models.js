@@ -5,13 +5,13 @@ var Schema = mongoose.Schema,
 if(process.env.NODE_ENV == "production"){
   mongoose.connect(process.env.MONGODB_URI);
 }else{
-  mongoose.connect('mongodb://localhost/hypeRefsDatabase');
+  mongoose.connect('mongodb://localhost/GifGalleryDB');
 }
 
 var CritiqueSchema = new mongoose.Schema({
   body: String
 });
-var HypeRefSchema = new mongoose.Schema({
+var GifSchema = new mongoose.Schema({
   created: {
     type: Date,
     default: Date.now
@@ -25,6 +25,6 @@ var HypeRefSchema = new mongoose.Schema({
 });
 
 module.exports = {
-  HypeRef: mongoose.model('HypeRef', HypeRefSchema),
+  Gif: mongoose.model('Gif', GifSchema),
   Critique: mongoose.model('Comment', CritiqueSchema)
 }
