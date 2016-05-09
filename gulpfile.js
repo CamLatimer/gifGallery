@@ -18,7 +18,8 @@ gulp.task('watch', function () {
 gulp.task('start', function () {
   browserSync.init({
     proxy: "localhost:8080",
-    files: ['**/*.css', '**/*.html', '**/*.js']
+    files: ['**/*.css', '**/*.html', '**/*.js'],
+    open: false
   });
   nodemon({
     script: 'index.js',
