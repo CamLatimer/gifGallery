@@ -18,16 +18,17 @@ gulp.task('watch', function () {
 gulp.task('start', function () {
   browserSync.init({
     proxy: "localhost:8080",
-    files: ['**/*.css', '**/*.html']
+    files: ['**/*.css', '**/*.html', '**/*.js']
   });
   nodemon({
     script: 'index.js',
     ext: 'js',
     env: { 'NODE_ENV': 'development' }
   }).on('start', function(){
-    browserSync.reload('**/*.css', '**/*.html');
-})
+    browserSync.reload();
+  });
+});
 
 gulp.task('default', ['start', 'sass', 'watch'], function(){
   console.log('gulp is on...');
-})
+});
