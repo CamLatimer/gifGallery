@@ -10,9 +10,13 @@
       $scope.catalogue = catalogue;
     });
 
-    $scope.stopper = function($event){
-      $event.preventDefault();
-    }
+    $scope.likeAdd = function(ref){
+      console.log(ref);
+      $http.put('/api/gifs/:_id/likeIt', ref)
+      .then(function(response){
+        console.log(response);
+      });
+    };
 
   })
   .controller('GifCtrl', function($scope, $state, Gif, $http){
