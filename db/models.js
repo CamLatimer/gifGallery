@@ -24,9 +24,9 @@ var GifSchema = new mongoose.Schema({
   likes: {type: Number, default: 0},
   critiques: [CritiqueSchema]
 });
-GifSchema.methods.likeIt = function(callback){
+GifSchema.methods.likeIt = function(){
   this.likes += 1;
-  this.save(callback);
+  this.save();
 };
 
 module.exports = {
