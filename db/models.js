@@ -21,8 +21,13 @@ var GifSchema = new mongoose.Schema({
   giphy_id: String,
   img_url: String,
   og_still_url: String,
+  likes: {type: Number, default: 0},
   critiques: [CritiqueSchema]
 });
+GifSchema.methods.likeIt = function(callback){
+  this.likes += 1;
+  this.save(callback);
+};
 
 module.exports = {
   Gif: mongoose.model('Gif', GifSchema),
