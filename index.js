@@ -24,13 +24,15 @@ app.get('/api/gifs', function(req, res){
     res.json(gifs);
   })
 });
+
 // get a single gif
-// app.get('/api/gifs/:_id', function(req, res){
-//   Gif.findOne({_id: req.params._id})
-//   .then(function(gif){
-//     res.json(gif);
-//   });
-// });
+app.get('/api/gifs/:_id', function(req, res){
+  Gif.findOne({_id: req.params._id})
+  .then(function(gif){
+    res.json(gif);
+  });
+});
+
 // create a gif
 app.post('/api/gifs', function(req, res){
   console.log(req.body);
@@ -45,10 +47,14 @@ app.post('/api/gifs', function(req, res){
 
 // add a like to a gif
 app.put('/api/gifs/:_id/likeIt', function(req, res){
-  Gif.findById(req.params._id, function(err, gif){
+  console.log(req.body);
+  Gif.findOne({_id: req.body._id}, function(err, gif){
+    if(err){
+      console.log(err);
+    }
     gif.likeIt();
     res.json(gif);
-    console.log(gif._id + ' has  ' + gif.likes);
+    console.log(gif._id + ' has  ' + gif.likes + ' like(s)');
   });
 });
 
