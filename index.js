@@ -47,14 +47,12 @@ app.post('/api/gifs', function(req, res){
 
 // add a like to a gif
 app.put('/api/gifs/:_id/likeIt', function(req, res){
-  console.log(req.body);
   Gif.findOne({_id: req.body._id}, function(err, gif){
     if(err){
       console.log(err);
     }
     gif.likeIt();
     res.json(gif);
-    console.log(gif._id + ' has  ' + gif.likes + ' like(s)');
   });
 });
 
