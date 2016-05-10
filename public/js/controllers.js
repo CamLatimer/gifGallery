@@ -5,18 +5,24 @@
   .module('gifControllers', [])
   .controller('CatalogueCtrl', function($scope, Gif, $http){
 
-    Gif.getGifs(function(response){
-      var catalogue = response.data;
-      $scope.catalogue = catalogue;
-    });
-
-    $scope.likeAdd = function(ref){
-      console.log(ref);
-      $http.put('/api/gifs/:_id/likeIt', ref)
-      .then(function(response){
-        console.log(response);
+    function getEm(){
+      Gif.getGifs(function(response){
+        var catalogue = response.data;
+        $scope.catalogue = catalogue;
       });
     };
+
+    $scope.likeAdd = function(ref){
+      $http.put('/api/gifs/:_id/likeIt', ref)
+      .then(function(response){
+        Gif.getGifs(function(response){
+          var catalogue = response.data;
+          $scope.catalogue = catalogue;
+        });
+      });
+    };
+
+    getEm();
 
   })
   .controller('GifCtrl', function($scope, $state, Gif, $http){
@@ -53,14 +59,12 @@
   })
   .controller('ShowCtrl', function($scope, $http, $stateParams, Gif){
     var refId = $stateParams.id;
-    console.log(refId);
     Gif.getGifs(function(response){
       var refs = response.data;
       $scope.refs = refs;
       $scope.refs.forEach(function(ref){
         if(refId === ref._id){
           $scope.ref = ref;
-          console.log($scope.ref)
         };
       });
     });
