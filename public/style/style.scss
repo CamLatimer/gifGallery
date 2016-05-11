@@ -33,6 +33,7 @@ a:hover{
   z-index: 300;
   a {
     color: black;
+    text-decoration: none;
   }
 }
 
@@ -57,7 +58,7 @@ a:hover{
   width: 100%;
   @include flexin;
   margin: 0;
-  margin-top: 100px;
+  margin-top: 120px;
   text-align: center;
 }
 .feature-img{
@@ -115,7 +116,7 @@ textarea:focus, input:focus, .likes:focus{
   bottom: 0;
 }
 .search-box{
-  margin: 0 0 40px 20px;
+  margin: 0 0 40px 0;
   border: none;
   height: 50px;
   width: 300px;
@@ -143,7 +144,7 @@ textarea:focus, input:focus, .likes:focus{
   opacity: .4;
 }
 .catalogue-container{
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .catalogue-back{
   font-size: 30em;
@@ -204,5 +205,10 @@ background: $highlight;
   .thumb-holder{
     height: 100%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 400px){
+  #stream-link{
+    display: block;
   }
 }
