@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
 $highlight: rgba(0, 210, 33, .4);
-$altClr: rgba(0, 255, 255, .3);
+$altClr: rgba(0, 230, 255, .3);
 
 @mixin flexin(){
   display: flex;
@@ -21,6 +21,19 @@ a:hover{
 }
 .upper{
   z-index: 200;
+}
+.site-header{
+  border-bottom: 2px solid $altClr;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: $altClr;
+  background:rgba(220,255,210, .9);
+  z-index: 300;
+  a {
+    color: black;
+  }
 }
 
 .thumb-holder{
@@ -42,6 +55,7 @@ a:hover{
   width: 100%;
   @include flexin;
   margin: 0;
+  margin-top: 100px;
   text-align: center;
 }
 .feature-img{
@@ -126,6 +140,9 @@ textarea:focus, input:focus, .likes:focus{
   line-height: 1em;
   opacity: .4;
 }
+.catalogue-container{
+  margin-top: 100px;
+}
 .catalogue-back{
   font-size: 30em;
 }
@@ -150,11 +167,13 @@ textarea:focus, input:focus, .likes:focus{
 }
 .like-btn:hover{
   border: 10px solid $highlight;
+  color: black;
 }
 .like-btn:active{
-width: 70px;
-height: 70px;
-color: $altClr;
+width: 97px;
+height: 97px;
+color: black;
+background: $highlight;
 }
 .likes-count{
   width: 70px;
@@ -162,7 +181,12 @@ color: $altClr;
   border-radius: 50px;
   background: $highlight;
   cursor: auto;
-  top: -50px;
+  top: -70px;
+}
+.cat-count{
+  position: absolute;
+  top: 40px;
+  background: $altClr;
 }
 @media screen and (max-width: 680px){
   .like-container{
@@ -170,8 +194,8 @@ color: $altClr;
     margin: 0 auto -30px auto;
   }
 }
-@media screen and (max-width: 500px){
-  .show-img{
+@media screen and (max-width: 600px){
+  .show-img, .feature-img{
     height: 100%;
     width: 100%;
   }

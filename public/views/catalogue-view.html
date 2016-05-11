@@ -1,9 +1,10 @@
-<h1><a data-ui-sref="gif"><span class="glyphicon glyphicon-asterisk"></span></a></h1>
-<input type="search" label="search" class="inputs search-box" data-ng-model="search" placeholder="  find">
-  <div class="container catalogue-container">
+<div class="container catalogue-container">
+  <input type="search" label="search" class="inputs search-box" data-ng-model="search" placeholder="  find">
+
 
     <div class="row catalogue-row">
-      <div class="thumb-holder col-xs-2 center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: 'created'">
+      <div class="thumb-holder col-xs-2 center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: '-created'">
+        <button class="cat-count likes-count likes">{{ref.likes}}</button>
         <a data-ui-sref="show({id: ref._id})"><img class="ref-thumb" data-ng-src="{{ref.og_still_url != null ? ref.og_still_url : ref.img_url}}"></a>
       </div>
     </div>
@@ -11,3 +12,4 @@
   </div>
 
 <div class="catalogue-back full-back container">{{search}}</div>
+</div>
