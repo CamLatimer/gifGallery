@@ -1,12 +1,14 @@
 <h1><a data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h1>
 
 <div class="feature-container">
-
   <img class="feature-img show-img" data-ng-src="{{ref.img_url}}">
+  <div class="like-container">
+    <button class="likes like-btn" data-ng-click="likeAdd(ref)">like</button>
+    <button class="likes-count likes">{{ref.likes}}</button>
+  </div>
   <div class="container critique-container">
     <p data-ng-repeat="critique in ref.critiques" class="critique">
       {{critique.body}}
     </p>
   </div>
-
 </div>
