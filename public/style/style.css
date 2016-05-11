@@ -54,9 +54,11 @@ a:hover {
   text-align: center; }
 
 .feature-img {
+  position: relative;
   margin: 0 auto; }
 
 .show-img {
+  position: relative;
   cursor: auto; }
 
 #hide-field {
@@ -191,8 +193,8 @@ textarea:focus, input:focus, .likes:focus {
 
 @media screen and (max-width: 600px) {
   .show-img, .feature-img {
-    height: 100%;
-    width: 100%; }
+    max-height: 100%;
+    max-width: 100%; }
   .thumb-holder {
     height: 100%;
     width: 100%; } }
