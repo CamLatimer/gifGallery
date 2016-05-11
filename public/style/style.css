@@ -30,7 +30,9 @@ a:hover {
   width: 200px;
   height: 200px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: inline-block;
+  position: relative; }
 
 .ref-thumb {
   width: 100%;
@@ -178,8 +180,8 @@ textarea:focus, input:focus, .likes:focus {
 
 .cat-count {
   position: absolute;
-  top: 40px;
-  background: rgba(0, 230, 255, 0.3); }
+  background: rgba(0, 230, 255, 0.3);
+  top: 40px; }
 
 @media screen and (max-width: 680px) {
   .like-container {

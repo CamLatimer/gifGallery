@@ -41,6 +41,8 @@ a:hover{
   height: 200px;
   margin: 0;
   padding: 0;
+  display: inline-block;
+  position: relative;
 }
 .ref-thumb{
   width: 100%;
@@ -185,8 +187,8 @@ background: $highlight;
 }
 .cat-count{
   position: absolute;
-  top: 40px;
   background: $altClr;
+  top: 40px;
 }
 @media screen and (max-width: 680px){
   .like-container{
