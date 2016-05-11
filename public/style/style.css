@@ -199,4 +199,6 @@ textarea:focus, input:focus, .likes:focus {
 
 @media screen and (max-width: 400px) {
   #stream-link {
-    display: block; } }
+    display: table;
+    width: auto;
+    box-sizing: content-box; } }
