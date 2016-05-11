@@ -203,4 +203,6 @@ textarea:focus, input:focus, .likes:focus {
   #stream-link {
     display: table;
     width: auto;
-    box-sizing: content-box; } }
+    box-sizing: content-box; }
+  #save-btn {
+    font-size: 2em; } }
