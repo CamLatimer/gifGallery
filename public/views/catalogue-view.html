@@ -3,7 +3,7 @@
 
 
     <div class="row catalogue-row">
-      <div class="thumb-holder col-xs-2 center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: '-created'">
+      <div class="thumb-holder col-xs-2 center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: 'created'">
         <button class="cat-count likes-count likes">{{ref.likes}}</button>
         <a data-ui-sref="show({id: ref._id})"><img class="ref-thumb" data-ng-src="{{ref.og_still_url != null ? ref.og_still_url : ref.img_url}}"></a>
       </div>
