@@ -1,12 +1,10 @@
 <h1><a id="upper" data-ui-sref="catalogue"><span class="glyphicon glyphicon-asterisk"></span></a></h1>
 
 <div class="feature-container text-center">
-  <img data-ng-click="reload()" class="feature-img" data-ng-src="{{giphy.image_original_url}}">
-  <div class="container">
-    <h1>
-      <a href='' data-ng-click="reload()" id="next-btn">
-        >
-      </a>
+  <img class="feature-img" data-ng-src="{{giphy.image_original_url}}">
+  <div class="next-container">
+    <h1 data-ng-click="reload()" id="next-btn">
+      <span class="glyphicon glyphicon-arrow-right"></span>
     </h1>
   </div>
   <form class="critique-form" data-ng-submit="adder()">

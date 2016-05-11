@@ -24,8 +24,8 @@ a:hover{
 }
 
 .thumb-holder{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin: 0;
   padding: 0;
 }
@@ -46,7 +46,6 @@ a:hover{
 }
 .feature-img{
   margin: 0 auto;
-  cursor: pointer;
 }
 .show-img{
   cursor: auto;
@@ -66,12 +65,13 @@ textarea:focus, input:focus, .likes:focus{
   letter-spacing: .1em;
 }
 #next-btn{
-  position: absolute;
   top: 20px;
-  right: 100px;
+  width: 200px;
+  margin: auto;
   z-index: 80;
   font-size: 8em;
   text-decoration: none;
+  cursor: pointer;
 }
 #save-btn{
   background: $altClr;
@@ -172,6 +172,10 @@ color: $altClr;
 }
 @media screen and (max-width: 500px){
   .show-img{
+    height: 100%;
+    width: 100%;
+  }
+  .thumb-holder{
     height: 100%;
     width: 100%;
   }
