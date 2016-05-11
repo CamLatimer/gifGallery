@@ -3,8 +3,6 @@
 <div class="feature-container">
 
   <img class="feature-img show-img" data-ng-src="{{ref.img_url}}">
-  <p id="likes-display">{{ref.likes}}</p>
-  <button data-ng-click="likeAdd(ref)">like</button>
   <div class="container critique-container">
     <p data-ng-repeat="critique in ref.critiques" class="critique">
       {{critique.body}}

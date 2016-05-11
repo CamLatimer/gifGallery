@@ -58,14 +58,6 @@
       });
     };
 
-
-    $scope.likeAdd = function(ref){
-      $http.put('/api/gifs/:_id/likeIt', ref)
-      .then(function(response){
-        getSpecs();
-      });
-    };
-
     getSpecs();
 
   })
