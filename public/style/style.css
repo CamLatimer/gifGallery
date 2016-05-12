@@ -176,7 +176,7 @@ textarea:focus, input:focus, .likes:focus {
 .likes-count {
   width: 70px;
   height: 70px;
-  border-radius: 50px;
+  border-radius: 90px;
   background: rgba(0, 210, 33, 0.4);
   cursor: auto;
   top: -70px; }
@@ -205,4 +205,6 @@ textarea:focus, input:focus, .likes:focus {
     width: auto;
     box-sizing: content-box; }
   #save-btn {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .likes {
+    text-align: center; } }

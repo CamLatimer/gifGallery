@@ -183,7 +183,7 @@ background: $highlight;
 .likes-count{
   width: 70px;
   height: 70px;
-  border-radius: 50px;
+  border-radius: 90px;
   background: $highlight;
   cursor: auto;
   top: -70px;
@@ -217,5 +217,8 @@ background: $highlight;
   }
   #save-btn{
     font-size: 2em;
+  }
+  .likes{
+    text-align: center;
   }
 }
