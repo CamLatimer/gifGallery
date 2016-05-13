@@ -33,11 +33,17 @@
       var ref = $scope.ref;
       ref.img_url = $scope.giphy.image_original_url;
       ref.og_still_url = $scope.giphy.fixed_height_small_still_url;
-      ref.critiques = [{body: ref.critique}];
-      $http.post('/api/gifs', ref)
-      .then(function(response){
-        $state.go('catalogue');
-      });
+      if(ref.critique === ''){
+        console.log('nothing there...');
+        alert('oops! please enter text before saving...');
+      } else{
+        $http.post('/api/gifs', ref)
+        .then(function(response){
+          $state.go('catalogue');
+        });
+      }
+
+
     };
 
     $scope.loadGif();
