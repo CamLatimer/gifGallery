@@ -57,7 +57,6 @@ app.post('/api/gifs', function(req, res){
       console.log('item already exists... someone tried to add a .gif with img_url of ' + req.body.img_url);
     }
   });
-  res.end();
 });
 
 // add a like to a gif
