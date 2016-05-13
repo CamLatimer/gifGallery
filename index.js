@@ -36,13 +36,28 @@ app.get('/api/gifs/:_id', function(req, res){
 // create a gif
 app.post('/api/gifs', function(req, res){
   console.log(req.body);
-  Gif.create(req.body)
-  .then(function(err, gif){
-    if (err) {
+  // look thru database and see if any of the docs contain a url
+  // that was already entered
+  Gif.findOne({img_url: req.body.img_url}, function(err, gif){
+    // if something is found, do nothing, maybe show a message
+    //else do Gif.create with req.body
+    if(err){
       console.log(err);
+    } else if (!gif){
+      console.log('no item found, gonna make one...')
+      Gif.create(req.body)
+      .then(function(err, gif){
+        if (err) {
+          console.log(err);
+        }
+      // res.json(gif);
+      res.send('whoa');
+    });
+    } else {
+      console.log('item already exists... someone tried to add a .gif with img_url of ' + req.body.img_url);
     }
-    res.json(gif);
   });
+  res.end();
 });
 
 // add a like to a gif
