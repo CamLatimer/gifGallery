@@ -37,13 +37,12 @@
         console.log('nothing there...');
         alert('oops! please enter text before saving...');
       } else{
+        ref.critiques = [{body: ref.critique}];
         $http.post('/api/gifs', ref)
         .then(function(response){
-          $state.go('catalogue');
+          console.log(ref.critiques);
         });
       }
-
-
     };
 
     $scope.loadGif();
