@@ -42,6 +42,7 @@
         .then(function(response){
           console.log(ref.critiques);
         });
+        $state.go('catalogue');
       }
     };
 
