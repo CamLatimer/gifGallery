@@ -1,57 +1,86 @@
 [
   {
-    "img_url" : "http://media0.giphy.com/media/UmIpYo2bU6Obu/giphy.gif",
-    "og_still_url": null,
-    "critiques" : [{"body" : "art gallery mvp"}]
+    "_id": "575498fcd2247fce508f88af",
+    "img_url": "http://media1.giphy.com/media/P38l40HQcUpdS/giphy.gif",
+    "og_still_url": "http://media1.giphy.com/media/P38l40HQcUpdS/100_s.gif",
+    "__v": 0,
+    "critiques": [
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "_id": "575498fcd2247fce508f88b0"
+      }
+    ],
+    "likes": 0,
+    "created": "2016-06-05T21:26:20.967Z"
   },
   {
-    "img_url": "http://media1.giphy.com/media/qtEOed6lzH4fm/giphy.gif",
-    "og_still_url": null,
-    "critiques": [{"body": "The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Another one. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Eliptical talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast."}]
+    "_id": "5754999dd2247fce508f88b1",
+    "img_url": "http://media0.giphy.com/media/wgBhJ44KeKcpi/giphy.gif",
+    "og_still_url": "http://media0.giphy.com/media/wgBhJ44KeKcpi/100_s.gif",
+    "__v": 0,
+    "critiques": [
+      {
+        "body": "\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "_id": "5754999dd2247fce508f88b2"
+      }
+    ],
+    "likes": 0,
+    "created": "2016-06-05T21:29:01.310Z"
   },
   {
-    "img_url" : "http://media2.giphy.com/media/bgvjz8mavcojS/giphy.gif",
-    "og_still_url": null,
-    "critiques": [{"body": "I’m up to something. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Another one. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Eliptical talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast."}]
+    "_id": "575499f6d2247fce508f88b3",
+    "img_url": "http://media1.giphy.com/media/JSk5rJW91VApW/giphy.gif",
+    "og_still_url": "http://media1.giphy.com/media/JSk5rJW91VApW/100_s.gif",
+    "__v": 0,
+    "critiques": [
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est",
+        "_id": "575499f6d2247fce508f88b4"
+      }
+    ],
+    "likes": 0,
+    "created": "2016-06-05T21:30:30.687Z"
   },
   {
-  "img_url" : "http://media0.giphy.com/media/KUQ4U0NnCUxag/giphy.gif",
-  "og_still_url": null,
-	"critiques":[{"body": "I’m up to something. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Another one. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Eliptical talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast."}]
+    "_id": "57549a27d2247fce508f88b5",
+    "img_url": "http://media3.giphy.com/media/11CCn8sSFSm2kg/giphy.gif",
+    "og_still_url": "http://media3.giphy.com/media/11CCn8sSFSm2kg/100_s.gif",
+    "__v": 0,
+    "critiques": [
+      {
+        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,",
+        "_id": "57549a27d2247fce508f88b6"
+      }
+    ],
+    "likes": 0,
+    "created": "2016-06-05T21:31:19.432Z"
   },
   {
-    "img_url":"http://media4.giphy.com/media/xt17YCv65wQVi/giphy.gif",
-    "og_still_url": null,
-    "critiques": [{"body": "Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. They will try to close the door on you, just open it. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Learning is cool, but knowing is better, and I know the key to success. Let’s see what Chef Dee got that they don’t want us to eat. Learning is cool, but knowing is better, and I know the key to success. The key to success is to keep your head above the water, never give up"}]
+    "_id": "57549afed2247fce508f88b7",
+    "img_url": "http://media4.giphy.com/media/13K4UJj0WDeBOg/giphy.gif",
+    "og_still_url": "http://media4.giphy.com/media/13K4UJj0WDeBOg/100_s.gif",
+    "__v": 0,
+    "critiques": [
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+        "_id": "57549afed2247fce508f88b8"
+      }
+    ],
+    "likes": 0,
+    "created": "2016-06-05T21:34:54.235Z"
   },
   {
-    "img_url": "http://media0.giphy.com/media/l4KhYXYuv0HH0AExy/giphy.gif",
-    "og_still_url": null,
-    "critiques": [{"body":"Look at the sunset, life is amazing, life is beautiful, life is what you make it. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. Lion! They will try to close the door on you, just open it. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. Mogul talk."}]
-  },
-  {
-    "img_url":"http://media2.giphy.com/media/mRfInPlisFzqM/giphy.gif",
-    "og_still_url": null,
-    "critiques":[{"body": "Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. Give thanks to the most high. Special cloth alert. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! The key is to drink coconut, fresh coconut, trust me. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Let’s see what Chef Dee got that they don’t want us to eat."}]
-  },
-  {
-    "img_url":"http://media0.giphy.com/media/103wDiWRyLeykw/giphy.gif",
-    "og_still_url": null,
-    "critiques": [{"body": "Don’t ever play yourself. To succeed you must believe. When you believe, you will succeed. Bless up. Special cloth alert. Congratulations, you played yourself. Let’s see what Chef Dee got that they don’t want us to eat. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. The key is to drink coconut, fresh coconut, trust me. Hammock talk come soon. To be successful you’ve got to work hard, to make history, simple, you’ve got to make it."}]
-  },
-  {
-  "img_url": "http://media0.giphy.com/media/5KN6UqeDnyF1u/giphy.gif",
-  "og_still_url": null,
-  "critiques": [{"body":"I’m up to something. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Another one. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Eliptical talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast."}]
-  },
-  {
-    "img_url": "http://media0.giphy.com/media/ZEEmbRoepm9SE/giphy.gif",
-    "og_still_url": null,
-    "critiques": [{"body":"I’m up to something. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Another one. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Eliptical talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast."}]
-  },
-  {
-    "img_url": "http://media3.giphy.com/media/CncyqZGQyEUbm/giphy.gif",
-    "og_still_url": null,
-    "critiques": [{"body":"I’m up to something. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Another one. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Eliptical talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast."}]
+    "_id": "57549b38d2247fce508f88b9",
+    "img_url": "http://media2.giphy.com/media/Ir8IN1gctL26I/giphy.gif",
+    "og_still_url": "http://media2.giphy.com/media/Ir8IN1gctL26I/100_s.gif",
+    "__v": 0,
+    "critiques": [
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+        "_id": "57549b38d2247fce508f88ba"
+      }
+    ],
+    "likes": 0,
+    "created": "2016-06-05T21:35:52.105Z"
   }
 ]

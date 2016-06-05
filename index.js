@@ -2,7 +2,6 @@ var express = require('express');
 var Schema = require('./db/models');
 var mongoose = require('mongoose');
 var parser = require('body-parser');
-var cors = require('cors');
 
 app = express();
 
@@ -12,8 +11,7 @@ var Critique = Schema.Critique;
 app.set('port', process.env.PORT || 8080);
 
 app.use(express.static(__dirname + '/public'));
-app.use(cors());
-app.use(parser.urlencoded({extended: true}));
+// app.use(parser.urlencoded({extended: true}));
 app.use(parser.json({extended: true}));
 
 
