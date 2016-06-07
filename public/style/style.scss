@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
-$highlight: rgba(0, 210, 33, .4);
-$altClr: rgba(0, 230, 255, .3);
+@import "_color_scheme.scss";
+@import "_buttons.scss";
 
 @mixin flexin(){
   display: flex;
@@ -10,7 +10,7 @@ $altClr: rgba(0, 230, 255, .3);
 }
 body{
   font-family: 'Pathway Gothic One', sans-serif;
-  background: rgba(220,216,210, .3);
+  height: 100%;
 }
 a{
   color: $highlight;
@@ -36,7 +36,15 @@ a:hover{
     text-decoration: none;
   }
 }
-
+.load-more{
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+.load-more__btn{
+  display: block;
+  margin: 0 auto;
+}
 .thumb-holder{
   width: 200px;
   height: 200px;

@@ -1,8 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
+.btn-primary {
+  background: rgba(102, 240, 255, 0.3);
+  color: black; }
+  .btn-primary:hover {
+    background: rgba(0, 210, 33, 0.4); }
+
+.btn-primary {
+  display: block;
+  width: 150px;
+  height: 50px;
+  font-size: 2em;
+  font-style: italic;
+  border: none; }
+
 body {
   font-family: 'Pathway Gothic One', sans-serif;
-  background: rgba(220, 216, 210, 0.3); }
+  height: 100%; }
 
 a {
   color: rgba(0, 210, 33, 0.4);
@@ -26,6 +40,15 @@ a:hover {
   .site-header a {
     color: black;
     text-decoration: none; }
+
+.load-more {
+  margin: 0;
+  width: 100%;
+  padding: 0; }
+
+.load-more__btn {
+  display: block;
+  margin: 0 auto; }
 
 .thumb-holder {
   width: 200px;
