@@ -4,12 +4,22 @@
   angular
   .module('gifControllers', [])
   .controller('CatalogueCtrl', function($scope, Gif, $http){
-
-      Gif.getGifs(function(response){
-        var catalogue = response.data;
-        $scope.catalogue = catalogue;
-      });
-
+      // set variable in this scope, so the items can be accessed outside of loadGifs();
+      $scope.catalogue;
+      // limit of items that can be shown at any time.
+      $scope.gifLimit = 10;
+      // function that grabs gifs from API
+      $scope.loadGifs = function(){
+        Gif.getGifs(function(response){
+        $scope.catalogue = response.data;
+        });
+      }
+      // function that loads specified amount of items
+      $scope.loadMore = function() {
+        $scope.gifLimit += 10;
+      }
+      // makes the call to load the gifs
+      $scope.loadGifs();
   })
   .controller('GifCtrl', function($scope, $state, Gif, $http){
     $scope.reload = function(){
