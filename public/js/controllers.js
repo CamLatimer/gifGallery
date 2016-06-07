@@ -9,11 +9,6 @@
       // limit of items that can be shown at any time.
       $scope.gifLimit = 10;
       $scope.gifTotal;
-      if($scope.gifLimit >= $scope.gifTotal){
-        $scope.showBtn = true;
-      } else{
-        $scope.showBtn = false;
-      }
 
       // function that grabs gifs from API
       $scope.loadGifs = function(){
@@ -34,6 +29,12 @@
       }
       // makes the call to load the gifs
       $scope.loadGifs();
+      // makes load more button disapear if all the gifs are loaded
+      if($scope.gifLimit >= $scope.gifTotal){
+        $scope.showBtn = false;
+      } else{
+        $scope.showBtn = true;
+      }
   })
   .controller('GifCtrl', function($scope, $state, Gif, $http){
     $scope.reload = function(){
