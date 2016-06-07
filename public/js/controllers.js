@@ -9,7 +9,12 @@
       // limit of items that can be shown at any time.
       $scope.gifLimit = 10;
       $scope.gifTotal;
-      $scope.showBtn = true;;
+      if($scope.gifLimit >= $scope.gifTotal){
+        $scope.showBtn = true;
+      } else{
+        $scope.showBtn = false;
+      }
+
       // function that grabs gifs from API
       $scope.loadGifs = function(){
         Gif.getGifs(function(response){
