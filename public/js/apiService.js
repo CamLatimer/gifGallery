@@ -9,7 +9,7 @@
       .then(callback);
     };
     this.getGiphys = function(callback){
-      return $http.get('//api.giphy.com/v1/gifs/random?rating=pg-13&api_key=dc6zaTOxFJmzC')
+      return $http.get('//api.giphy.com/v1/gifs/random?rating=pg-13&tag=funny+cat&api_key=dc6zaTOxFJmzC')
       .then(callback);
     };
   });

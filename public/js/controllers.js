@@ -3,20 +3,29 @@
 (function(){
   angular
   .module('gifControllers', [])
-  .controller('CatalogueCtrl', function($scope, Gif, $http){
+  .controller('CatalogueCtrl', function($scope, Gif, $window){
       // set variable in this scope, so the items can be accessed outside of loadGifs();
       $scope.catalogue;
       // limit of items that can be shown at any time.
       $scope.gifLimit = 10;
+      $scope.gifTotal;
+      $scope.showBtn = true;;
       // function that grabs gifs from API
       $scope.loadGifs = function(){
         Gif.getGifs(function(response){
         $scope.catalogue = response.data;
+        $scope.gifTotal = $scope.catalogue.length;
         });
       }
       // function that loads specified amount of items
       $scope.loadMore = function() {
         $scope.gifLimit += 10;
+        // makes load more button disapear if all the gifs are loaded
+        if($scope.gifLimit >= $scope.gifTotal) {
+          $scope.showBtn = false;
+        } else {
+          $scope.showBtn = true;
+        }
       }
       // makes the call to load the gifs
       $scope.loadGifs();
