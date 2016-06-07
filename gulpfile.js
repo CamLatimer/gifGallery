@@ -6,13 +6,13 @@ var browserSync = require("browser-sync").create();
 
 gulp.task('sass', function () {
   //if other tasks depend on this task, it must return something
-  return gulp.src('./public/style/style.scss')
+  return gulp.src('./public/style/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest('./public/style'));
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./public/style/style.scss', ['sass']);
+  gulp.watch('./public/style/*.scss', ['sass']);
 });
 
 gulp.task('start', function () {
