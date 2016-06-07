@@ -1,14 +1,18 @@
 <div class="container catalogue-container">
   <input type="search" label="search" class="inputs search-box" data-ng-model="search" placeholder="  find">
-  
+
     <div class="catalogue-row">
-      <div class="thumb-holder center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: '-created'">
+      <div class="thumb-holder center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: '-created' | limitTo: gifLimit">
         <button class="cat-count likes-count likes">{{ref.likes}}</button>
         <a data-ui-sref="show({id: ref._id})"><img class="ref-thumb" data-ng-src="{{ref.og_still_url != null ? ref.og_still_url : ref.img_url}}"></a>
       </div>
     </div>
 
-  </div>
+</div>
+
+<div class="load-more" data-ng-show="showBtn" data-ng-click="loadMore()">
+  <button class="load-more__btn btn-primary" type="button" name="button">LOAD MORE</button>
+</div>
 
 <div class="catalogue-back full-back container">{{search}}</div>
 </div>
