@@ -41,6 +41,10 @@ a:hover {
     color: black;
     text-decoration: none; }
 
+.loading {
+  text-align: center;
+  margin-bottom: 50px; }
+
 .load-more {
   margin: 0;
   width: 100%;
