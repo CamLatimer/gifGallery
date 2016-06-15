@@ -42,6 +42,11 @@
         // when there's data, clear the interval
         stopBlink();
         $scope.gifTotal = $scope.catalogue.length;
+        if($scope.gifLimit >= $scope.gifTotal){
+          $scope.showBtn = false;
+        } else{
+          $scope.showBtn = true;
+        }
         });
       }
       // function that loads specified amount of items
@@ -58,11 +63,7 @@
       // makes the call to load the gifs
       $scope.loadGifs();
       // makes load more button disapear if all the gifs are loaded
-      if($scope.gifLimit >= $scope.gifTotal){
-        $scope.showBtn = false;
-      } else{
-        $scope.showBtn = true;
-      }
+
   })
   .controller('GifCtrl', function($scope, $state, Gif, $http){
 
