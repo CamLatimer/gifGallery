@@ -1,6 +1,10 @@
 <div class="container catalogue-container">
   <input type="search" label="search" class="inputs search-box" data-ng-model="search" placeholder="  find">
 
+  <div class="loading-holder" data-ng-show="loading">
+    <h2>loading...</h2>
+  </div>
+
     <div class="catalogue-row">
       <div class="thumb-holder center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: '-created' | limitTo: gifLimit">
         <button class="cat-count likes-count likes">{{ref.likes}}</button>

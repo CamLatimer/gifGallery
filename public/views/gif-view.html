@@ -1,4 +1,7 @@
 <div class="feature-container text-center">
+  <div class="loading-holder" data-ng-show="loading">
+    <h2>loading...</h2>
+  </div>
   <img class="feature-img" data-ng-src="{{giphy.image_original_url}}">
   <div class="next-container">
     <h1 data-ng-click="reload()" id="next-btn">
