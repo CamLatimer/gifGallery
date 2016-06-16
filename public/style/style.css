@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
+body {
+  background: whitesmoke; }
+
 .btn-primary {
   background: rgba(102, 240, 255, 0.3);
   color: black; }

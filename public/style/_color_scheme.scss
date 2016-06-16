@@ -1,6 +1,9 @@
 $highlight: rgba(0, 210, 33, .4);
 $altClr: rgba(0, 230, 255, .3);
 
+body{
+  background: rgb(245,245,245);
+}
 .btn-primary{
   background: lighten($altClr, 20%);
   color: black;
