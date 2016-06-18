@@ -2,8 +2,8 @@
 
 (function(){
   angular
-  .module('gifControllers', ['ngCookies'])
-  .controller('WelcomeCtrl', function($scope, $window, $cookies){
+  .module('gifControllers', [])
+  .controller('WelcomeCtrl', function($scope, $window){
     $scope.content = true;
     $scope.displayContent = function(){
       $scope.content = !$scope.content;
