@@ -8,15 +8,16 @@
   <link rel="stylesheet" href="/style/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-cookies.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-resource.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <script src="/js/gifGallery.angular.js"></script>
   <script src="/js/controllers.js"></script>
   <script src="/js/apiService.js"></script>
 </head>
 <body>
-  <div class="welcome">
+  <div class="welcome" data-ng-controller="WelcomeCtrl" data-ng-show="content">
     <div class="welcome__content">
+      <h1 class="welcome__exit" data-ng-click="displayContent()"><span>X</span></h1>
       <h1 class="welcome__header">Welcome</h1>
       <div class="welcom__directions">
         please checkout blah blah blah...
