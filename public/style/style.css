@@ -30,7 +30,9 @@ body {
 
 body {
   font-family: 'Pathway Gothic One', sans-serif;
-  height: 100%; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 a {
   color: rgba(0, 210, 33, 0.4);
@@ -87,9 +89,15 @@ a:hover {
 .feature-container {
   position: relative;
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex: none;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
   margin: 0;
   margin-top: 120px;
   text-align: center; }
@@ -109,9 +117,15 @@ textarea:focus, input:focus, .likes:focus {
   outline: none; }
 
 .critique {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex: none;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
   margin-top: 20px;
   font-size: 3em;
   text-align: left;

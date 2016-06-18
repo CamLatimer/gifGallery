@@ -3,11 +3,15 @@ var sass = require("gulp-sass");
 var watch = require('gulp-watch');
 var nodemon = require('gulp-nodemon');
 var browserSync = require("browser-sync").create();
+var prefix = require("gulp-autoprefixer");
 
 gulp.task('sass', function () {
   //if other tasks depend on this task, it must return something
   return gulp.src('./public/style/*.scss')
   .pipe(sass().on('error', sass.logError))
+  .pipe(prefix({
+			browsers: ['last 4 versions']
+		}))
   .pipe(gulp.dest('./public/style'));
 });
 
