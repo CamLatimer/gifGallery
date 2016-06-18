@@ -11,6 +11,9 @@
 }
 html, body{
   font-family: 'Pathway Gothic One', sans-serif;
+  top: 0;
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 a{
@@ -26,10 +29,12 @@ a:hover{
 .site-header{
   border-bottom: 2px solid $altClr;
   margin-bottom: 50px;
+  margin: 0;
   position: fixed;
   top: 0;
   width: 100%;
   color: $altClr;
+  z-index: 40;
   background:rgba(220,255,210, .9);
   a {
     color: black;
@@ -41,7 +46,7 @@ a:hover{
   margin-bottom: 50px;
 }
 .load-more{
-  margin: 0;
+  margin: 0 auto 50px auto;
   width: 100%;
   padding: 0;
 }

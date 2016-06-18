@@ -10,30 +10,36 @@ body {
     background: rgba(0, 210, 33, 0.4); }
 
 .welcome {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   color: white; }
+  .welcome p {
+    background: rgba(0, 210, 33, 0.4); }
 
 .welcome__exit {
   background: rgba(0, 230, 255, 0.3); }
 
 .welcome {
-  position: fixed;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  width: 65%;
+  left: 20%;
   z-index: 50;
-  top: 0;
+  top: 150px;
+  margin: 0 auto;
   text-align: center; }
 
-.welcome__exit {
+.welcome__content {
+  width: 65%;
+  margin: 0 auto; }
+
+.welcome__directions p {
+  font-size: 1.4em;
+  letter-spacing: .2em;
+  margin: 20px; }
+
+.enter-btn {
+  color: white;
   cursor: pointer;
-  position: relative;
-  display: inline-block;
-  font-size: 2em;
-  padding: 10px;
-  left: 70px;
-  top: 50px; }
-  .welcome__exit span {
-    vertical-align: middle; }
+  margin: 50px auto 50px auto; }
 
 .btn-primary {
   display: block;
@@ -45,6 +51,9 @@ body {
 
 html, body {
   font-family: 'Pathway Gothic One', sans-serif;
+  top: 0;
+  margin: 0;
+  padding: 0;
   height: 100%; }
 
 a {
@@ -60,10 +69,12 @@ a:hover {
 .site-header {
   border-bottom: 2px solid rgba(0, 230, 255, 0.3);
   margin-bottom: 50px;
+  margin: 0;
   position: fixed;
   top: 0;
   width: 100%;
   color: rgba(0, 230, 255, 0.3);
+  z-index: 40;
   background: rgba(220, 255, 210, 0.9); }
   .site-header a {
     color: black;
@@ -74,7 +85,7 @@ a:hover {
   margin-bottom: 50px; }
 
 .load-more {
-  margin: 0;
+  margin: 0 auto 50px auto;
   width: 100%;
   padding: 0; }
 

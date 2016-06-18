@@ -15,22 +15,34 @@
   <script src="/js/apiService.js"></script>
 </head>
 <body>
-  <div class="welcome" data-ng-controller="WelcomeCtrl" data-ng-show="content">
-    <div class="welcome__content">
-      <h1 class="welcome__exit" data-ng-click="displayContent()"><span>X</span></h1>
-      <h1 class="welcome__header">Welcome</h1>
-      <div class="welcom__directions">
-        please checkout blah blah blah...
-      </div>
-    </div>
-  </div>
   <header class="site-header">
     <h1>
       <em><a data-ui-sref="catalogue">catalogue </a></em>
       <span id="pipe">|</span>
-      <em><a id="stream-link" data-ui-sref="gif">.gif stream</a></em>
+      <em><a id="stream-link" data-ui-sref="gif">stream</a></em>
     </h1>
   </header>
+  <div class="welcome" data-ng-controller="WelcomeCtrl" data-ng-show="content">
+      <h1 class="welcome__header">Welcome</h1>
+      <div class="welcome__directions">
+        <p>
+          Hey there!  This is a project I made in the MEAN stack (MongoDB, Express, Angular, and Node)
+          that builds and displays a user generated gallery of .gifs and commentary.
+        </p>
+        <p>
+          Feel free to search through what's already here via the catalogue view.
+        </p>
+        <p>
+          Or, check out the stream view to cycle through individual .gifs that I'm pulling from Giphy's API.
+          Click the arrow to go to another one.
+          If you find one you'd like to say something about, add commentary and save it to the rest of the catalogue.
+        </p>
+        <button class="btn-primary enter-btn" data-ng-click="displayContent()">Enter</button>
+        <p>
+          Thanks for checking it out!
+        </p>
+      </div>
+  </div>
   <main data-ui-view>
   </main>
 </body>

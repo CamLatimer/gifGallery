@@ -1,21 +1,28 @@
 .welcome{
-  position: fixed;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  width: 65%;
+  left: 20%;
   z-index: 50;
-  top: 0;
+  top: 150px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.welcome__exit{
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  font-size: 2em;
-  padding: 10px;
-  left: 70px;
-  top: 50px;
-  span{
-    vertical-align: middle;
+.welcome__content{
+  width: 65%;
+  margin: 0 auto;
+}
+
+.welcome__directions{
+  p{
+    font-size: 1.4em;
+    letter-spacing: .2em;
+    margin: 20px;
   }
+}
+
+.enter-btn{
+    color: white;
+    cursor: pointer;
+    margin: 50px auto 50px auto;
 }
