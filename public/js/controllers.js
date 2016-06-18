@@ -2,7 +2,13 @@
 
 (function(){
   angular
-  .module('gifControllers', [])
+  .module('gifControllers', ['ngCookies'])
+  .controller('WelcomeCtrl', function($scope, $window, $cookies){
+    $scope.content = true;
+    $scope.displayContent = function(){
+      $scope.content = !$scope.content;
+    }
+  })
   .controller('CatalogueCtrl', function($scope, Gif, $window){
       // set variable in this scope, so the items can be accessed outside of loadGifs();
       $scope.catalogue;
