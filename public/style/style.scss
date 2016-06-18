@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 @import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
 @import "_color_scheme.scss";
+@import "_welcome.scss";
 @import "_buttons.scss";
 
 @mixin flexin(){
@@ -8,7 +9,6 @@
   flex-direction: column;
   flex:none;
 }
-
 body{
   font-family: 'Pathway Gothic One', sans-serif;
   height: 100%;
