@@ -7,7 +7,7 @@
 
     <div class="catalogue-row">
       <div class="thumb-holder center-block" data-ng-repeat="ref in catalogue | filter:search | orderBy: '-created' | limitTo: gifLimit">
-        <button class="cat-count likes-count likes">{{ref.likes}}</button>
+        <!-- <button class="cat-count likes-count likes">{{ref.likes}}</button> -->
         <a data-ui-sref="show({id: ref._id})"><img class="ref-thumb" data-ng-src="{{ref.og_still_url != null ? ref.og_still_url : ref.img_url}}"></a>
       </div>
     </div>
